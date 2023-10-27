@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-primary: #800080;
+  --color-secundary: #ffffff;
+  --font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: var(--color-primary);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ok {
+  color: green;
+}
+
+button[type="submit"] {
+  background-color: green;
+}
+
+.button {
+  background-color: var(--color-primary);
+}
+
+.link {
+  color: var(--color-primary);
+}
+
+.warning {
+  color: yellow;
+}
+
+.error {
+  color: red;
+}
+
+.footer {
+  background-color: var(--color-primary);
+}
+
+img {
+  max-width: 600px;
+}
+
+form {
+  background-color: antiquewhite;
+  text-align: center;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+
+  margin: auto;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+h1,
+#top {
+  text-align: center;
+}
+
+.content {
+  background-color: antiquewhite;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  color: pink;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  border: 2px solid blue;
+  width: 100px;
+  top: 100%;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.btn-primary {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+}
