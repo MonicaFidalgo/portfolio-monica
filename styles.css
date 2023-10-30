@@ -2,8 +2,12 @@
 
 :root {
   --color-primary: #800080;
-  --color-secundary: #ffffff;
+  --color-secondary: #ffffff;
   --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -19,14 +23,6 @@ h2 {
 
 .ok {
   color: green;
-}
-
-button[type="submit"] {
-  background-color: green;
-}
-
-.button {
-  background-color: var(--color-primary);
 }
 
 .link {
@@ -110,8 +106,41 @@ a:hover {
   top: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 700px) {
+@media (max-width: 700px) {
   body {
     background-color: lightblue;
   }
+}
+
+@media (min-width: 1024px) {
+  .article {
+    display: flex;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 15px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.project-article p {
+  margin-bottom: 30px;
 }
